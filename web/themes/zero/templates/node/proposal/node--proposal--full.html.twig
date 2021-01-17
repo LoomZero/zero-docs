@@ -1,0 +1,16 @@
+{% embed '/themes/zero/gulp/src/components/layout/wrap/wrap.twig' %}
+
+  {% block content %}
+    <h1>{{ title }}</h1>
+    {{ chart }}
+    {% include '/themes/zero/gulp/src/components/text/wysiwyg/wysiwyg.twig' %}
+    {% for option in options %}
+      <div class="option">
+        <h2>{{ option.title|code }}</h2>
+        {{ option.description }}
+      </div>
+    {% endfor %}
+    {{ vote_form }}
+  {% endblock %}
+
+{% endembed %}

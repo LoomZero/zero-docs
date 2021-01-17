@@ -1,0 +1,9 @@
+{{ attach_library('zero/button') }}
+
+{% set data_value %}
+  {% for name, value in data %}
+    data-{{ name }}="{{ value }}"
+  {% endfor %}
+{% endset %}
+
+<span class="button" {{ data_value }}>{{ text }}</span>

@@ -1,0 +1,38 @@
+{{ attach_library('zero/sheet') }}
+
+<div class="sheet">
+  <header class="sheet__header" role="banner">
+    <div class="sheet__navi">
+      {{ page.primary_menu }}
+      {{ page.secondary_menu }}
+      {{ page.breadcrumb }}
+    </div>
+    {{ page.header }}
+  </header>
+
+  <aside class="sheet__info">
+    {{ page.highlighted }}
+    {{ page.help }}
+  </aside>
+
+  <main class="sheet__main" role="main">
+    <a id="main-content" tabindex="-1"></a>
+
+    <div class="sheet__content">
+      {{ page.content }}
+    </div>
+
+    {% if page.sidebar_first %}
+      <aside class="sheet__sidebar" role="complementary">
+        {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
+
+  </main>
+
+  {% if page.footer %}
+    <footer class="sheet__footer" role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+</div>

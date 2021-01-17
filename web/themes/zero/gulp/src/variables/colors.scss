@@ -1,0 +1,41 @@
+@import 'util';
+
+$colors: (
+        white: (
+                color: #ffffff,
+                text: #282828,
+        ),
+        dark: (
+                color: #2D2D2D,
+                text: #72898F,
+        ),
+        black: (
+                color: #282C34,
+                text: #282C34,
+        ),
+        dark_blue: (
+                color: #000247,
+                text: #ffffff,
+        ),
+        blue: (
+                color: #1B5A5A,
+                text: #ffffff,
+        ),
+        light_blue: (
+                color: #268182,
+                text: #282828,
+        ),
+        gray: (
+                color: #878787,
+                text: #282828,
+        ),
+);
+
+@function color($name, $type: 'color') {
+  @return get($colors, $name, $type);
+}
+
+@mixin background($name) {
+  background-color: color($name);
+  color: color($name, 'text');
+}

@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function zero_proposal_theme($existing, $type, $theme, $path) {
+  return [
+    'zero_propose_vote_form' => [
+      'variables' => [
+        'id' => NULL,
+        'options' => NULL,
+      ],
+    ],
+  ];
+}

@@ -1,0 +1,6 @@
+name: 'Zero Proposal'
+type: module
+description: 'Add Theme Functions for Theme "zero"'
+core_version_requirement: 9.*
+package: zero
+version: 0.1.1

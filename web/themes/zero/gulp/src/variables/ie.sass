@@ -1,0 +1,7 @@
+@mixin because-ie()
+  @media screen and (-ms-high-contrast: none)
+    @content
+
+@mixin because-edge()
+  @supports (-ms-ime-align: auto)
+    @content

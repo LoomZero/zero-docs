@@ -1,0 +1,29 @@
+// Chart
+//
+// Markup: chart.twig
+//
+// Styleguide: media.chart
+
+.chart
+  display: flex
+  overflow: hidden
+  background: #282c34
+  border: 1px solid black
+
+  &__chart
+    width: 50%
+    position: relative
+
+  &--hover &__canvas
+    cursor: pointer
+
+  &__votes
+    width: 50%
+    overflow: auto
+
+  &__title
+    font-size: 32px
+    padding: 10px 15px 0
+
+  &__content
+    padding: 10px 15px

@@ -1,0 +1,8 @@
+{{ attach_library('zero/chart-vote') }}
+
+<div class="chart-vote" data-proposal-option-key="{{ key }}">
+  <div class="chart-vote__name">{{ name }}</div>
+  {% if comment %}
+    <div class="chart-vote__comment">{{ comment|code }}</div>
+  {% endif %}
+</div>

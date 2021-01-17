@@ -1,0 +1,10 @@
+{{ attach_library('zero/wysiwyg') }}
+
+{% set classes %}
+  wysiwyg
+  {% if small %}wysiwyg--small{% endif %}
+{% endset %}
+
+<div class="{{ classes }}">
+  {{ body|code }}
+</div>

@@ -1,0 +1,15 @@
+zero.proposal.api:
+  path: '/api/zero/proposal'
+  defaults:
+    _controller: '\Drupal\zero_proposal\Controller\ZeroProposalController::vote'
+    _title: 'Vote for proposal'
+  requirements:
+    _permission: 'access content'
+
+zero.proposal.chartdata:
+  path: '/api/zero/proposal/chartdata'
+  defaults:
+    _controller: '\Drupal\zero_proposal\Controller\ZeroProposalController::chartdata'
+    _title: 'Get proposal votes'
+  requirements:
+    _permission: 'access content'

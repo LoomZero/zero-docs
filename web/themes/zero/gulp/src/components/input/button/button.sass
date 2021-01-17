@@ -1,0 +1,23 @@
+// Button
+//
+// Markup: button.twig
+//
+// Styleguide: input.button
+
+.button
+  display: inline-block
+  padding: 10px 15px
+  cursor: pointer
+  background: #282c34
+  border: 1px solid black
+  margin: 0
+  text-align: center
+  user-select: none
+  transition: transform .05s ease-in-out, background .15s ease-in-out
+
+  &:hover
+    background: #383c44
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .4)
+
+  &--down
+    transform: scale(.9)

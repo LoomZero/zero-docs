@@ -1,0 +1,6 @@
+services:
+  zero.theme.twig_extension:
+    arguments: []
+    class: Drupal\zero_theme\TwigExtension\ZeroFilter
+    tags:
+      - { name: twig.extension }

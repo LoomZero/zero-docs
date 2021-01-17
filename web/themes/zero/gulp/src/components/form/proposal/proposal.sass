@@ -1,0 +1,46 @@
+// Proposal
+//
+// Markup: proposal.twig
+//
+// Styleguide: form.proposal
+
+@import 'colors'
+
+.proposal
+  position: relative
+  overflow: hidden
+  border: 1px solid black
+  border-top: none
+
+  &__track
+    display: flex
+    transition: transform .8s ease-in-out
+
+  &__step
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    padding: 40px
+
+  &__step-title
+    font-size: 30px
+    font-weight: bold
+    text-align: center
+
+  &__name
+    width: 100%
+    border: none
+    font-size: 22px
+    padding: 3px 5px
+    outline: none
+
+  &__comment-wrapper
+    display: flex
+    flex-direction: column
+
+  &__comment
+    min-width: 50vw
+    max-width: 90vw
+    border: none
+    outline: none

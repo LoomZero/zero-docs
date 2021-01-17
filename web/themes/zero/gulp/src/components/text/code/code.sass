@@ -1,0 +1,23 @@
+// Code
+//
+// Markup: code.twig
+//
+// Styleguide: text.code
+
+@import 'colors'
+
+.code
+  position: relative
+  min-height: 32px
+
+  &__type
+    position: absolute
+    top: 0
+    right: 0
+    padding: 5px 10px
+    font-weight: bold
+    @include background(blue)
+
+  &__pre
+    margin: 0
+    line-height: .8em

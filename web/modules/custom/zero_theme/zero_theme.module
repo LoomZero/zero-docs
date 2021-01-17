@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function zero_theme_theme($existing, $type, $theme, $path) {
+  return [
+    'zero_chart' => [
+      'variables' => [
+        'uuid' => NULL,
+      ],
+    ],
+  ];
+}

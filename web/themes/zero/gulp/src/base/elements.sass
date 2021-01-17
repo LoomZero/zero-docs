@@ -1,0 +1,71 @@
+@import 'breakpoints'
+@import 'colors'
+@import 'fonts'
+
+body
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+  -webkit-font-smoothing: antialiased
+  --scrollbar-width: calc(100vw - 100%)
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+
+h1
+  font-size: 42px
+  line-height: 54px
+
+  +medium
+    font-size: 36px
+
+  +narrow
+    font-size: 30px
+
+h2
+  font-size: 34px
+  line-height: 54px
+
+  +medium
+    font-size: 28px
+
+  +narrow
+    font-size: 22px
+
+h3
+  font-size: 28px
+  line-height: 46px
+
+  +medium
+    font-size: 22px
+
+  +narrow
+    font-size: 16px
+
+h4
+  font-size: 24px
+  line-height: 46px
+
+  +medium
+    font-size: 18px
+
+  +narrow
+    font-size: 12px
+
+a
+  text-decoration: none
+  color: color(dark_blue)
+  transition: color .5s ease-in-out
+
+img
+  border-style: none
+  max-width: 100%
+  height: auto
+
+.element
+
+  &__code
+    background: color(gray)
+    color: color(white)
+    padding: 2px 5px
+    border-radius: 2px

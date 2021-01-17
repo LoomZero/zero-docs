@@ -1,0 +1,13 @@
+{
+  "initOrder": [
+    "assets",
+    "scripts", 
+    "styles"
+  ],
+  "defaultTasks": [
+    "assets",
+    "scripts",
+    "styles"
+  ],
+  "vendor": "gulp/src/vendor"
+}

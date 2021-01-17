@@ -1,0 +1,6 @@
+{{ attach_library('zero/description-wrap') }}
+
+<div class="description-wrap">
+  <div class="description-wrap__content">{% block content %}{{ content }}{% endblock %}</div>
+  <div class="description-wrap__description">{% block description %}{{ description }}{% endblock %}</div>
+</div>

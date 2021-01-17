@@ -1,0 +1,13 @@
+@function get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+@function between($from, $to, $fromWidth, $toWidth) {
+  $slope: ($to - $from) / ($toWidth - $fromWidth);
+  $base: $from - $slope * $fromWidth;
+
+  @return calc(#{$base} + (100vw - var(--scrollbar-width)) * #{$slope});
+}

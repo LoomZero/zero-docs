@@ -1,0 +1,6 @@
+{{ attach_library('zero/code') }}
+
+<div class="code">
+  {% if code_type_name %}<div class="code__type">{{ code_type_name }}</div>{% endif %}
+  <pre class="code__pre"><code class="{{ code_type }}">{{ code }}</code></pre>
+</div>

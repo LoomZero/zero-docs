@@ -1,0 +1,8 @@
+library:
+  css: defer
+  dependencies:
+    - zero/lib-chart
+    - zero_theme/zero
+
+example:
+  - code: "$wrapper = new EntityWrapper('view', 'view_key')"

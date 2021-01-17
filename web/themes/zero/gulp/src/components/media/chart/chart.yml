@@ -1,0 +1,5 @@
+library:
+  css: static
+  dependencies:
+    - zero/lib-chart
+    - zero_theme/zero

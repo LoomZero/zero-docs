@@ -1,0 +1,16 @@
+zero.narrow:
+  label: narrow
+  mediaQuery: 'all and (max-width: 599px)'
+  weight: 0
+zero.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 600px) and (max-width: 1024px)'
+  weight: 1
+zero.wide:
+  label: wide
+  mediaQuery: 'all and (min-width: 1025px)'
+  weight: 2
+zero.desktop:
+  label: desktop
+  mediaQuery: 'all and (min-width: 1440px)'
+  weight: 3

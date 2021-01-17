@@ -1,0 +1,45 @@
+{{ attach_library('zero/proposal') }}
+
+<div class="proposal" data-proposal-id="{{ id }}">
+  <div class="proposal__track">
+    <div class="proposal__step">
+      <div class="proposal__content">
+        <div class="proposal__step-title">Wer bist du?</div>
+        <input type="text" class="proposal__name" data-proposal-key="name" />
+      </div>
+    </div>
+    <div class="proposal__step">
+      <div class="proposal__content">
+        <div class="proposal__step-title">Für was stimmst du?</div>
+        {% for value, text in options %}
+          {% include '/themes/zero/gulp/src/components/input/button/button.twig' with {
+            data: {
+              'proposal-type': 'option',
+              'proposal-value': value,
+            },
+          } %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="proposal__step">
+      <div class="proposal__content">
+        <div class="proposal__step-title">Gib ein Kommentar ab? Warum stimmst du dafür?</div>
+        <div class="proposal__comment-wrapper">
+          <textarea rows="5" cols="60" class="proposal__comment" data-proposal-key="comment"></textarea>
+          {% include '/themes/zero/gulp/src/components/input/button/button.twig' with {
+            data: {
+              'proposal-type': 'submit',
+              'proposal-value': 'skip_comment',
+            },
+            text: 'Skip Comment',
+          } %}
+        </div>
+      </div>
+    </div>
+    <div class="proposal__step">
+      <div class="proposal__content">
+        <div class="proposal__step-title proposal__step-title-result">Danke</div>
+      </div>
+    </div>
+  </div>
+</div>
